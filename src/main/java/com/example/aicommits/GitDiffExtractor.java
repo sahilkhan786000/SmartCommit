@@ -4,9 +4,11 @@ import java.io.InputStream;
 import java.nio.charset.StandardCharsets;
 import java.util.concurrent.TimeUnit;
 
+/*
 /**
  * Runs `git diff --cached` and returns the staged diff text.
  */
+
 public class GitDiffExtractor {
     public static String getStagedDiff() throws Exception {
         ProcessBuilder pb = new ProcessBuilder("git", "diff", "--cached", "--unified=0", "--no-color");
