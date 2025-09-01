@@ -1,0 +1,3 @@
+com\example\aicommits\AIClient.class
+com\example\aicommits\CommitMessageGenerator.class
+com\example\aicommits\GitDiffExtractor.class
