@@ -47,13 +47,18 @@ public class AIClient {
     }
 
     private static int countPrefixedLines(String text, String prefix) {
-        int count = 0;
-        for (String line : text.split("\n")) {
-            if ((prefix.equals("+") && line.startsWith("+") && !line.startsWith("+++")) count++;
-            if ((prefix.equals("-") && line.startsWith("-") && !line.startsWith("---")) count++;
+    int count = 0;
+    for (String line : text.split("\n")) {
+        if (prefix.equals("+") && line.startsWith("+") && !line.startsWith("+++")) {
+            count++;
         }
-        return count;
+        if (prefix.equals("-") && line.startsWith("-") && !line.startsWith("---")) {
+            count++;
+        }
     }
+    return count;
+}
+
 
     public static String generateWithOpenAI(String diff) {
         try {
