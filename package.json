@@ -1,0 +1,16 @@
+{
+  "name": "ai-commit-generator",
+  "version": "1.0.0",
+  "description": "Beginner-friendly AI Commit Message Generator using Git Hooks",
+  "main": "src/commitMessageGenerator.js",
+  "type": "module",
+  "scripts": {
+    "start": "node src/commitMessageGenerator.js"
+  },
+  "dependencies": {
+    "@huggingface/inference": "^4.7.1",
+    "dotenv": "^17.2.2",
+    "node-fetch": "^3.3.2",
+    "openai": "^4.104.0"
+  }
+}
